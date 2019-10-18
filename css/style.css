@@ -1,0 +1,23 @@
+.form1{
+	background-color:#66ccff;
+	text-align:center;
+	margin:5px;
+	padding:5px;
+	border:medium double black;
+	width:600px;
+	height:800px;
+	left:0;
+	right:0;
+	top:0;
+	margin:auto;
+	buttom:0;
+	position:absolute;
+}
+#button1{
+	background-color:#ffff00;
+	
+}
+#button2{
+	background-color:#ff0033;
+	
+}

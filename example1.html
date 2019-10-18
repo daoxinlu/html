@@ -4,12 +4,21 @@
 		<title>Example</title>
 		<meta name="author" content="ludaoxin"/>
 		<meta name="description" content="A simple example"/>
-		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="css/style.css" type="text/css"/>
+		
 	</head>
 	<body>
-		<form method="post" action="http://titan:8080/form">
-			<input name="fave"/>
-			<button>Submit vote</button>
+		<div>
+		<form autocomplete="on" target="_blank" method="POST" action="http://www.daoxinlu.com/form">
+			<div class="form1">
+			<fieldset><legend><h1>你最爱的水果是什么</h1></legend>
+			<p><label for="fave">水果名字: <input autofocus name="fave" value="西瓜"/></label></p>
+			<p><label for="name">你的名字: <input name="name" value="陆道鑫"/></label></p>
+			</fieldset>
+			<p><button id="button1" type="submit"><strong>提交投票&nbsp &nbsp</strong></button><button id="button2" type="reset"><em>重新输入</em></button></p>
+			</div>
 		</form>
+		</div>
 	</body>
 </html>
