@@ -1,23 +1,53 @@
 .form1{
-	background-color:#66ccff;
+	
+	background-size:300px 300px;
+	box-shadow:10px 10px 5px #888888;
+	outline:solid #3300cc medium;
+	/*background-image:url("../img/fruit.png");*/
 	text-align:center;
 	margin:5px;
-	padding:5px;
+	padding:10px;
 	border:medium double black;
-	width:600px;
-	height:800px;
+	width:800px;
+	height:900px;
 	left:0;
 	right:0;
 	top:0;
 	margin:auto;
-	buttom:0;
+	bottom:0;
 	position:absolute;
-}
-#button1{
-	background-color:#ffff00;
+	border-radius:10px 10px;
+	
 	
 }
-#button2{
-	background-color:#ff0033;
+.button1{
+	background-image:linear-gradient(-180deg,#34d058,#28a745 90%);
 	
+}
+.button2{
+	background-color:#ffffcc;
+}
+.button{
+	border-radius:8px 8px;
+	font-size:18px;
+}
+#field1{
+	border-radius:12px 12px;
+}
+#fruit_shuoming{
+	font-size:20px;
+	text-shadow:5px 5px 10px lightgray;
+	position:absolute;left:25%;right:25%;bottom:50px;text-align :center;
+}
+body{
+	font-family:"KaiTi",sans-serif;
+	background-color:#99ccff;
+}
+#footer1{
+	position:absolute;left:25%;right:25%;bottom:30px;text-align :center;
+}
+div img{
+	position:absolute;left:100px;right:100px;bottom:300px;
+	width:600px;
+	filter: grayscale(100%);
 }
