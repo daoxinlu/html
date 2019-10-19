@@ -21,23 +21,41 @@
 	
 }
 .button1{
-	background-image:linear-gradient(-180deg,#34d058,#28a745 90%);
+	background-color:#339900;
 	
 }
 .button2{
 	background-color:#ffffcc;
 }
+.button:hover{
+	font-size:x-large;
+	background-color:#00ff00;
+	-webkit-transition-property:background-color,color,font-size,padding;
+	-webkit-transition-delay:100ms;
+	-webkit-transition-duration:500ms;
+}
 .button{
 	border-radius:8px 8px;
 	font-size:18px;
+	-webkit-transition-delay:0ms;
+	-webkit-transition-duration:100ms;
+	-webkit-transition-timing-function:ease;
 }
 #field1{
 	border-radius:12px 12px;
+	opacity:0.8;			#透明度
 }
 #fruit_shuoming{
 	font-size:20px;
 	text-shadow:5px 5px 10px lightgray;
-	position:absolute;left:25%;right:25%;bottom:50px;text-align :center;
+	position:absolute;left:25%;right:25%;bottom:70px;text-align :center;
+	border:medium double green;
+	border-radius:8px;
+	padding:10px;
+}
+.fruit_illustration:hover{
+	background-color:white;
+	cursor:wait;
 }
 body{
 	font-family:"KaiTi",sans-serif;
@@ -49,5 +67,62 @@ body{
 div img{
 	position:absolute;left:100px;right:100px;bottom:300px;
 	width:600px;
-	filter: grayscale(100%);
+	#filter: grayscale(100%);
+	
+	-webkit-transition-duration:400ms
 }
+div img:hover{
+	transform:scale(1.2);
+	-webkit-transition-duration:400ms;
+	-webkit-transition-delay:20ms;
+}
+.apple:hover{
+	background-color:red;
+	#-webkit-transition-property:background-color,color,font-size,padding;
+	#-webkit-transition-delay:100ms;
+	#-webkit-transition-duration:500ms;
+	#-webkit-animation-delay:100ms;
+	#-webkit-animation-duration:2000ms;
+	#-webkit-animation-iteration-count:infinite;
+	#-webkit-animation-timing-function:linear;
+	#-webkit-animation-name:'Grow';
+	
+}
+/*@-webkit-keyframes Grow{
+	from{
+		font-size:xx-small;
+		background-color:yellow;
+	}
+	to{
+		font-size:x-large;
+		border:medium solid white;
+		background-color:green;
+		color:white;
+		
+	}
+}*/
+span.apple{
+	#-webkit-transition-delay:10ms;
+	#-webkit-transition-duration:250ms;
+	#-webkit-animation-delay:100ms;
+	#-webkit-animation-duration:250ms;
+	transform:rotate(7deg);
+	-ms-transform:rotate(7deg); 	/* IE 9 */
+	-moz-transform:rotate(7deg); 	/* Firefox */
+	-webkit-transform:rotate(7deg); /* Safari 和 Chrome*/
+	-o-transform:rotate(7deg); 
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+}
+footer{
+	background-color:#666666;
+	color:white;					/*不是font-color*/
+	transform:rotate(7deg);
+	-ms-transform:rotate(7deg); 	/* IE 9 */
+	-moz-transform:rotate(7deg); 	/* Firefox */
+	-webkit-transform:rotate(7deg); /* Safari 和 Chrome */
+	-o-transform:rotate(7deg); 
+	-moz-transform-duration:500ms;		/*无这个属性*/
+	-webkit-transform-duration:500ms;
+	border-radius:5px;
+}
+		
