@@ -125,4 +125,15 @@ footer{
 	-webkit-transform-duration:500ms;
 	border-radius:5px;
 }
+#name_prove{
+	font-size:15px;
+	color:red;
+	font-weight:bold;
+	left:100px;
+}
+#fruit_prove{
+	font-size:15px;
+	color:red;
+	font-weight:bold;
+}
 		
