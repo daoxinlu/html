@@ -7,9 +7,11 @@
 		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
 		<link rel="stylesheet" href="css/style.css" type="text/css"/>
 		<script type="text/javascript" src="js/table_prove.js"></script>
+		<script src="js/event_listen.js"></script>
+		<script src="js/test.js"></script>
 	</head>
-	<body>
-		<div>
+	<body onclick="return test()">
+		<div id="div001"><span id="span001"></span>
 		<form autocomplete="off" target="_blank" method="POST" action="http://www.daoxinlu.com/form">
 			<div class="form1">
 			<fieldset id="field1">
@@ -29,15 +31,13 @@
 			<span id="name_prove"></span>
 			</fieldset>
 			<p>
-				<button id = "button1" class="button1 button" type="submit" onclick="return prove.idcheck()">提交投票</button>
+				<button  id = "button1" class="button1 button" type="submit" onclick="return prove.idcheck()">提交投票</button>
 			<span>&nbsp &nbsp </span>
 			<button class="button2 button" type="reset" >重新输入</button>
 			<button action="" class="button3 button" type="button"  onclick ="return prove.unlock()">解锁按钮</button>
 			</p>
-			<div>
-				<img src="./img/fruit.png"></img>
-			</div>
-			<p id="fruit_shuoming" class="fruit_illustration"> &nbsp 水果是人类的朋友，人人都应该喜欢水果，例如
+			<img id= "image1" src="./img/fruit.png"></img>
+			<p id="fruit_shuoming" class="fruit_illustration" oncopy="return prove.bancopy()" onselectstart="return false"> &nbsp 水果是人类的朋友，人人都应该喜欢水果，例如
 			<span class="apple">苹果</span>就被称为水果之王，有句老话讲，一天一<span class="apple">苹果</span>，疾病远离我。现代医学研究发现，水果能够促进人的新陈代谢，因而有排毒养颜的效果，另外，水果含有丰富的维生素，可以增强人体的免疫力<footer id="footer1">------------伟大的陆道鑫寄语</footer></p>
 			</div>
 		</form>

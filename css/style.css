@@ -40,6 +40,7 @@
 	-webkit-transition-delay:0ms;
 	-webkit-transition-duration:100ms;
 	-webkit-transition-timing-function:ease;
+	cursor:pointer;
 }
 #field1{
 	border-radius:12px 12px;
@@ -52,6 +53,8 @@
 	border:medium double green;
 	border-radius:8px;
 	padding:10px;
+	#-moz-user-select: none; /*火狐*/
+	#-webkit-user-select: none; /*webkit浏览器*/
 }
 .fruit_illustration:hover{
 	background-color:white;
@@ -65,10 +68,10 @@ body{
 	position:absolute;left:25%;right:25%;bottom:30px;text-align :center;
 }
 div img{
-	position:absolute;left:100px;right:100px;bottom:300px;
-	width:600px;
-	#filter: grayscale(100%);
+	position:absolute;left:210px;right:200px;bottom:350px;
+	width:400px;
 	
+	#filter: grayscale(100%);
 	-webkit-transition-duration:400ms
 }
 div img:hover{
@@ -136,4 +139,6 @@ footer{
 	color:red;
 	font-weight:bold;
 }
-		
+#span001{
+	color:red;
+}
